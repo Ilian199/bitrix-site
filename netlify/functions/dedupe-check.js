@@ -28,6 +28,8 @@ exports.handler = async (event) => {
       return { statusCode: 400, body: 'deal_id not found in request' };
     }
 
+    dealId = String(dealId).replace(/^DEAL_/i, '');
+
     const call = async (method, payload) => {
       const res = await fetch(`${webhookBase}${method}.json`, {
         method: 'POST',

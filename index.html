@@ -317,11 +317,16 @@
                 <circle cx="500" cy="284" r="6" style="fill:#34d399;opacity:0"></circle>
                 <text x="500" y="228" text-anchor="middle" style="font-family:'IBM Plex Mono',monospace;font-size:16px;fill:#c3c9d8;letter-spacing:.02em">Свожу каналы</text>
               </g>
+              <g data-seg="3" data-cap="Письмо с почты само становится лидом, письмом-подтверждением и задачей менеджеру" transform="rotate(-90,500,-120)" style="cursor:pointer">
+                <line x1="500" y1="302" x2="500" y2="250" style="stroke:rgba(255,255,255,.34);stroke-width:2.4;stroke-linecap:round"></line>
+                <circle cx="500" cy="284" r="6" style="fill:#34d399;opacity:0"></circle>
+                <text x="500" y="228" text-anchor="middle" style="font-family:'IBM Plex Mono',monospace;font-size:16px;fill:#c3c9d8;letter-spacing:.02em">Разбираю почту</text>
+              </g>
           </g>
         </svg>
 
         <div style="position:relative;max-width:600px;margin:14px auto 0;border:1px solid rgba(52,211,153,.4);border-radius:10px;background:rgba(52,211,153,.05);padding:12px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center">
-          <span data-vis-num style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#34d399">01 / 03</span>
+          <span data-vis-num style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#34d399">01 / 04</span>
           <span data-vis-cap style="font-size:14.5px;color:#c3c9d8;text-wrap:pretty;transition:opacity .3s ease">Заявка с сайта сразу становится сделкой и уходит нужному менеджеру</span>
         </div>
 
@@ -408,6 +413,40 @@
           <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">02</span>В CRM создаётся сделка с <b style="color:#e7e9f0;font-weight:500">пометкой источника</b></div>
           <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">03</span>Система ищет <b style="color:#e7e9f0;font-weight:500">совпадение по номеру телефона</b></div>
           <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">04</span>Повторное обращение помечается, менеджер получает уведомление — <b style="color:#e7e9f0;font-weight:500">вместо дубля карточки</b></div>
+        </div>
+        </div>
+        <div data-case="3" style="display:none">
+        <div data-cx style="opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6f7893;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">Разобранный кейс · Почта</div>
+          <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:-.015em;font-size:clamp(23px,2.9vw,30px);line-height:1.2;max-width:720px;text-wrap:pretty">Автообработка заявок с почты</h2>
+          <p style="color:#9aa1b5;margin-top:16px;max-width:700px;font-size:15.5px;text-wrap:pretty">Автоматическая обработка входящих заявок с почты — от письма клиента до постановки задачи менеджеру, с защитой от просроченных заявок.</p>
+        </div>
+
+        <div data-cx style="margin-top:30px;border-left:3px solid var(--ac,#f5a623);background:#0f1526;padding:20px 24px;border-radius:0 10px 10px 0;max-width:820px;opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ac,#f5a623);text-transform:uppercase;letter-spacing:.06em;margin-bottom:9px">Как это собрано изнутри</div>
+          <p style="font-size:14.5px;color:#9aa1b5;text-wrap:pretty">Реализовано на бизнес-процессах Bitrix24 с условным ветвлением, задачами с динамическими дедлайнами и email-действиями CRM.</p>
+        </div>
+
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:14px">
+          <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">01</span>Письмо клиента — Bitrix24 автоматически создаёт <b style="color:#e7e9f0;font-weight:500">лид с правильным источником</b></div>
+          <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">02</span>Клиенту сразу уходит <b style="color:#e7e9f0;font-weight:500">письмо-подтверждение</b> — «Заявка получена, ответим в течение часа»</div>
+          <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">03</span>Менеджеру ставится задача с <b style="color:#e7e9f0;font-weight:500">дедлайном +2 часа</b> на обработку</div>
+          <div data-cx style="padding-left:42px;position:relative;font-size:14.5px;color:#9aa1b5;opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)"><span style="position:absolute;left:0;top:0;font-family:'IBM Plex Mono',monospace;color:var(--ac,#f5a623);font-size:13px">04</span>Лид не сдвинулся дольше суток — клиенту уходит <b style="color:#e7e9f0;font-weight:500">повторное письмо-напоминание</b>, а руководителю ставится задача с эскалацией</div>
+        </div>
+
+        <div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">
+          <div data-cx style="background:#0f1526;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px 24px;opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1),border-color .3s,box-shadow .3s" class="hv13">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ac,#f5a623);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px">Если заявку взяли в работу</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> Лид сдвинулся по стадии в пределах суток</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> <span>Клиент уже получил <b style="color:#e7e9f0;font-weight:500">подтверждение</b>, менеджер — задачу с дедлайном</span></div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> Напоминание и эскалация не запускаются</div>
+          </div>
+          <div data-cx style="background:#0f1526;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px 24px;opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1),border-color .3s,box-shadow .3s" class="hv14">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ac,#f5a623);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px">Если заявка зависла дольше суток</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> Стадия лида не изменилась — срабатывает условное ветвление</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> <span>Клиенту уходит <b style="color:#e7e9f0;font-weight:500">повторное письмо-напоминание</b></span></div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#9aa1b5;padding:6px 0"><span style="width:6px;height:6px;border-radius:50%;background:var(--ac,#f5a623);flex-shrink:0;margin-top:7px"></span> <span>Руководителю ставится задача с <b style="color:#e7e9f0;font-weight:500">эскалацией</b></span></div>
+          </div>
         </div>
         </div>
       </div>
